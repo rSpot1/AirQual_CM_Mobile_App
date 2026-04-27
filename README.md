@@ -1,6 +1,6 @@
-# 🌬️ AirQual CM — Guide de lancement
+# 🌬️ AirQual CM 
 
-**Application Flutter · Équipe AlphaInfera · IndabaX Cameroon 2026**
+**Application Flutter**
 
 ---
 
@@ -78,7 +78,7 @@ flutter build apk --split-per-abi
 
 ### Écran d'accueil
 - **Splash Screen** animé au lancement
-- **PM2.5 en temps réel** prédit par le modèle AlphaInfera (Random Forest)
+- **PM2.5 en temps réel** prédit par le modèle AlphaInfera (Random Forest) accessible via l'api déployée sur https://airqual-cm-api.onrender.com/
 - **Jauge circulaire animée** avec code couleur OMS
 - **KPIs météo** : Température, Vent, Humidité, Radiation
 - **Facteurs aggravants** : Harmattan, faible vent, chaleur…
@@ -104,7 +104,7 @@ flutter build apk --split-per-abi
 ### Paramètres
 - 🌙 **Mode sombre / clair** (sauvegardé localement)
 - 🌐 **Langue FR / EN** (sauvegardée localement)
-- 🔔 **Notifications** activables/désactivables
+- 🔔 **Notifications** activables/désactivables (programmable)
 - 📍 **Ville de notification** (par défaut = ville GPS)
 - 📅 **Durée des prévisions** : 7, 10 ou 14 jours
 
@@ -116,7 +116,6 @@ flutter build apk --split-per-abi
 
 ### À propos
 - Description du projet
-- Thème Hackathon IndabaX Cameroon 2026
 - Détail du modèle IA AlphaInfera
 - Sources de données
 
@@ -193,11 +192,7 @@ flutter run
 
 ### Erreur de localisation
 - S'assurer que le GPS est activé sur le device
-- L'app utilise Yaoundé comme fallback si le GPS est refusé
 
-### Dépendance `google_fonts` lente
-Les polices sont téléchargées au premier lancement.
-Pour les intégrer localement, placer les fichiers `.ttf` dans `assets/fonts/`.
 
 ---
 
@@ -220,8 +215,6 @@ flutter build apk --release
 ```
 
 ---
-
-## 👥 Équipe AlphaInfera
 
 **Hackathon IndabaX Cameroon 2026**
 Thème : *L'IA au service de la résilience climatique et sanitaire*
