@@ -106,23 +106,9 @@ class _HomeContent extends StatelessWidget {
               flexibleSpace: FlexibleSpaceBar(
                 background: _HeroHeader(data: data, lang: lang, isRefreshing: isRefreshing),
               ),
-              // Nom de l'app à gauche style WhatsApp
+              // Nom de l'app à gauche 
               title: Row(
                 children: [
-                  Container(
-                    width: 28,
-                    height: 28,
-                    decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      gradient: const LinearGradient(
-                        colors: [AppColors.primary, AppColors.primaryLight],
-                        begin: Alignment.topLeft,
-                        end: Alignment.bottomRight,
-                      ),
-                    ),
-                    child: const Icon(Icons.air_rounded, color: Colors.white, size: 16),
-                  ),
-                  const SizedBox(width: 8),
                   const Text(
                     'AirQual CM',
                     style: TextStyle(

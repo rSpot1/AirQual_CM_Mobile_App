@@ -148,8 +148,8 @@ class AboutScreen extends StatelessWidget {
                       ),
                       _ContentBlock(
                         content: isFr
-                            ? '🌍 Thème : L\'IA au service de la résilience climatique et sanitaire. Le Cameroun fait face à une dégradation croissante de la qualité de l\'air amplifiée par la variabilité climatique : pics de chaleur, stagnation des vents, tempêtes de poussière lors de l\'Harmattan.'
-                            : '🌍 Theme: AI for Climate & Health Resilience. Cameroon faces growing air quality degradation amplified by climate variability: heat spikes, wind stagnation, and dust storms during the Harmattan season.',
+                            ? 'Thème : L\'IA au service de la résilience climatique et sanitaire. Le Cameroun fait face à une dégradation croissante de la qualité de l\'air amplifiée par la variabilité climatique : pics de chaleur, stagnation des vents, tempêtes de poussière lors de l\'Harmattan.'
+                            : 'Theme: AI for Climate & Health Resilience. Cameroon faces growing air quality degradation amplified by climate variability: heat spikes, wind stagnation, and dust storms during the Harmattan season.',
                         ext: ext,
                       ),
                     ],
@@ -308,7 +308,7 @@ class AboutScreen extends StatelessWidget {
                   Center(
                     child: Column(children: [
                       Text(
-                        '© 2026 AlphaInfera · AirQual CM\nMade with ❤️ for Cameroon',
+                        '© 2026 AlphaInfera',
                         textAlign: TextAlign.center,
                         style: TextStyle(fontSize: 12, color: ext.textMuted, height: 1.6),
                       ),
@@ -320,7 +320,7 @@ class AboutScreen extends StatelessWidget {
                           borderRadius: BorderRadius.circular(10),
                           border: Border.all(color: ext.borderColor),
                         ),
-                        child: Text('v1.0.0 · IndabaX Cameroon 2026',
+                        child: Text('version 1.0',
                             style: TextStyle(fontSize: 11, color: ext.textMuted,
                                 fontWeight: FontWeight.w500)),
                       ),
