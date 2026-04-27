@@ -1,0 +1,72 @@
+name: airqual_cm
+description: AirQual CM - Surveillance de la Qualité de l'Air au Cameroun
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # HTTP & API
+  http: ^1.2.1
+
+  # State management
+  provider: ^6.1.2
+
+  # Local storage
+  shared_preferences: ^2.2.3
+
+  # Location
+  geolocator: ^13.0.2
+
+  # Notifications
+  flutter_local_notifications: ^19.5.0
+  timezone: ^0.10.1
+
+  # UI & Charts
+  fl_chart: ^0.68.0
+  flutter_map: ^7.0.2
+  latlong2: ^0.9.1
+  flutter_animate: ^4.5.2
+  shimmer: ^3.0.0
+
+  # Utilities
+  intl: ^0.19.0
+  permission_handler: ^11.3.1
+  collection: ^1.18.0
+  google_fonts: ^6.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/images/logo.png"
+  adaptive_icon_background: "#0A1628"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
