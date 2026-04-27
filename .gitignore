@@ -1,3 +1,4 @@
+# Flutter/Dart
 .dart_tool/
 .flutter-plugins
 .flutter-plugins-dependencies
@@ -6,15 +7,21 @@
 .pub/
 build/
 *.iml
-*.ipr
-*.iws
-.idea/
+
+# Android
+android/.gradle
+android/captures/
 android/local.properties
-android/.gradle/
-android/key.properties
-ios/Pods/
+android/key.jks
+android/app/google-services.json
+
+# iOS
 ios/.symlinks/
-ios/Flutter/App.framework
-ios/Flutter/Flutter.framework
-ios/Flutter/Generated.xcconfig
 ios/Flutter/flutter_export_environment.sh
+ios/Pods/
+
+# IDE
+.idea/
+.vscode/
+*.suo
+*.user
